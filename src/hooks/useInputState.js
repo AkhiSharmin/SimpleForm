@@ -4,10 +4,16 @@ const useInputState = (defaultValue = null) => {
     const [value, setValue] = useState(defaultValue)
 
 
-    const handleChange = val => {
-        setValue(val)
+    // const handleChange = e => {
+    //     setValue(e.target.value)
+    // }
+    const onChange = e => {
+        setValue(e.target.value)
     }
-    return [value, handleChange]
+    // return [value, handleChange]
+    return {
+        value, onChange
+    }
 }
 
 
