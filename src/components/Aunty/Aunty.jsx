@@ -13,3 +13,8 @@ const Aunty = () => {
 };
 
 export default Aunty;
+
+/**
+ * 1. Create a context and export it
+ * 2. Add provider for the context with a value
+ */

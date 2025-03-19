@@ -5,9 +5,7 @@ const Cousin = ({ name, asset }) => {
     <div>
       <h2>Cousin</h2>
       <p>{name}</p>
-      <section>
-        <Special asset={asset}></Special>
-      </section>
+      <section>{asset && <Special asset={asset}></Special>}</section>
     </div>
   );
 };
