@@ -13,6 +13,7 @@ const Cousin = ({ name, asset }) => {
         {asset && <Special asset={asset}></Special>}
         {name === "Siam" && <Friend></Friend>}
         {name === "Sabiha" && <p>Has: {gold}</p>}
+        {name === "Aaniya" && <p>Has: {gold}</p>}
       </section>
     </div>
   );
